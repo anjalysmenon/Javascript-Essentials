@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Agency</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .display {
+            height: 500px;
+            width: 800px;
+            background-color: lightgreen;
+            margin-left: 200px;
+            margin-top: 60px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        
+        h1 {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .form {
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        .search {
+            padding-bottom: 20px;
+        }
+        
+        .form {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display">
+        <h1>Bus Details</h1>
+        <br>
+        <div class="form">
+            <form>
+
+                <input type="text" placeholder="name" id="name" />
+                <input type="text" placeholder="source" id="source" />
+                <input type="text" placeholder="Destination" id="destination" />
+                <input type="text" placeholder="number" id="number" />
+                <input type="text" placeholder="passenger capacity" id="capacity" />
+                <br>
+                <button type="submit" onclick="addbus(event)">Add new Bus</button>
+
+            </form>
+
+
+
+
+        </div>
+        <div class="search">
+            Search by Source :<input type="text" placeholder="source" onkeyup="searchbySource()" id="searchsource" /> Search by Destination:<input type="text" placeholder="destination" onkeyup="searchbyDestination()" id="searchdestination" />
+        </div>
+        <div>
+            <table border="1" width=100%>
+                <thead>
+                    <tr>
+                        <th>SL No</th>
+                        <th>Name</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Number</th>
+                        <th>Passenger Capacity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+    <script src="additional2.js"></script>
+</body>
+
+</html>
